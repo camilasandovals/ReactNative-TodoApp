@@ -10,7 +10,7 @@ export default function TodoHeader({ setTodos, user }) {
       uid: user.uid,
       title: newItem,
     }
-    fetch(`https://chekov-api-c11.web.app/tasks/${user.uid}`, {
+    fetch(`https://much-todo-api-cs.web.app/items/${id}`, {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
